@@ -1,0 +1,8 @@
+body{
+        font-family: verdana;
+        font-size: 2em;
+        background-color: hsl(0, 0%, 90%);
+}
+#mySubmit{
+        font-size: 1em;  /* p9 */
+}
