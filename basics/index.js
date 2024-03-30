@@ -1111,21 +1111,106 @@
 // ex 4
 // extract value from object 
 
-const person1 = {
-        firstName : "Ayush",
-        lastName: "Jaiswal",
-        age:22,
-        job:"Developer",
-}
-const person2 = {
-        firstName : "Sainty",
-        lastName: "Kumar",
-        age:22,
-}
+// const person1 = {
+//         firstName : "Ayush",
+//         lastName: "Jaiswal",
+//         age:22,
+//         job:"Developer",
+// }
+// const person2 = {
+//         firstName : "Sainty",
+//         lastName: "Kumar",
+//         age:22,
+// }
 
-const {firstName,lastName,age,job = "Unemployed"}=person2;
+// const {firstName,lastName,age,job = "Unemployed"}=person2;
 
-console.log(firstName);
-console.log(lastName);
-console.log(age);
-console.log(job);
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
+// console.log(job);
+
+// ex 5
+// destructur in function parameter
+
+// function displayPerson({firstName,lastName,age,job="Unemployed"}){
+//         console.log(`user: ${firstName} ${lastName}`);
+//         console.log(`job:${job}`);
+//         console.log(`age:${age}`);
+// }
+// const person1 = {
+//         firstName : "Ayush",
+//         lastName: "Jaiswal",
+//         age:22,
+//         job:"Developer",
+// }
+// const person2 = {
+//         firstName : "Sainty",
+//         lastName: "Kumar",
+//         age:22,
+// }
+// displayPerson(person1);
+// displayPerson(person2);
+
+
+// Part 35 (Nested Object)object inside of other object.
+// Allow you to represent more complex data structure child object
+// is enclosed by a parent object.
+
+// ex 1
+
+// const person = {
+//         fullNmae : "Ayush Jaiswal",
+//         age:22,
+//         isStudent: true,
+//         hobbie : ["cricket","Basketball","vollybole"],
+//         address:{
+//                 Street: "kendua",
+//                 city:"Dhanbad",
+//                 state:"Jharkhand",
+//         }
+// }
+// console.log(person.fullNmae);
+// console.log(person.age);
+// console.log(person.isStudent);
+// // console.log(person.hobbie);
+// console.log(person.hobbie[0]);
+// // console.log(person.address);
+// console.log(person.address.city);
+
+// or 
+
+// for (let i in person.address) {
+//         console.log(person.address[i]);
+// }
+
+// ex 2
+
+// class person{
+//         constructor(name,age,...address){
+//                 this.name=name;
+//                 this.age=age;
+//                 this.address = new Address(...address);
+//         }
+// }
+
+// class Address{
+//         constructor(city,state,country){
+//                 this.city=city;
+//                 this.state=state;
+//                 this.country=country;
+//         }
+// }
+
+// const person1 = new person("Ayush jaiswal",22,"Dhanbad","Jharkhand","India");
+// const person2 = new person("Sainty",22,"Dhanbad","Jharkhand","India");
+// const person3 = new person("jaiswal",22,"Dhanbad","Jharkhand","India");
+
+// console.log(person1.name);
+// console.log(person1.age);
+// console.log(person1.address);
+// console.log(person1.address.state);
+
+
+// Part 36 (Array of object)
+
