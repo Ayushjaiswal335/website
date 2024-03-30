@@ -1123,7 +1123,7 @@ const person2 = {
         age:22,
 }
 
-const {firstName,lastName,age,job}=person2;
+const {firstName,lastName,age,job = "Unemployed"}=person2;
 
 console.log(firstName);
 console.log(lastName);
