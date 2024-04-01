@@ -1214,3 +1214,35 @@
 
 // Part 36 (Array of object)
 
+const fruits = [{name:"Apple",color:"red",calories:93 },
+               {name:"Orange",color:"orange",calories:89},
+               {name:"graps",color:"green",calories:87},
+               {name:"banana",color:"yello",calories:76},
+               {name:"papaya",color:"orange",calories:54}];
+
+// console.log(fruits[0].name);
+
+// lets add new object using push method 
+// fruits.push({name:"Coconut",color:"brown",calories:293});
+// fruits.pop(); //remove object
+// fruits.splice(1,2);
+
+// console.log(fruit);
+
+// foreach()
+// fruits.forEach(fruit => console.log(fruit));
+// fruits.forEach(fruit => console.log(fruit.name));
+
+// Map
+// const fruitName = fruits.map(fruits => fruits.name);
+// const fruitColor = fruits.map(fruits => fruits.color);
+
+// console.log(fruitName);
+// console.log(fruitColor);
+
+// filter
+const orangeColor = fruits.filter(fruit => fruit.color ==="orange");
+const lessCalorie = fruits.filter(fruit => fruit.calories <70)
+
+console.log(orangeColor);
+console.log(lessCalorie);
